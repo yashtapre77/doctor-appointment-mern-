@@ -12,6 +12,7 @@ import MyAppointments from './pages/MyAppointments'
 import Appointment from './pages/Appointment'
 import { assets } from './assets/assets_frontend/assets'
 import { useNavigate } from 'react-router-dom'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
         <Route path='/my-appointments' element={<MyAppointments />} />
         <Route path='/appointment/:docId' element={<Appointment />} />
       </Routes>
+      <Footer />
     </div>
   )
 }
